@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" data-i18n-attr="content:metaDesc"
+        content="لوفينغ هومز — فندق للكلاب في هونج كونج. موقع حديث متجاوب مع دعم لغتين وإمكانية وصول." />
+  <title>Loving Homes</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <script defer src="../JS/i18n.js"></script>
+  <script defer src="../JS/app.js"></script>
+</head>
+
+<body class="rtl" data-title-key="titleContact">
+
+  <header>
+    <div class="container">
+      <div class="nav" role="navigation" aria-label="Primary Navigation">
+
+        <a class="brand" href="index.html">
+          <div class="logo"><img src="../Images/logo.png" alt="logo"></div>
+          <div class="brand-text">
+            <strong data-i18n="brandName">لوفينغ هومز</strong>
+            <span data-i18n="brandLine">فندق الكلاب </span>
+          </div>
+        </a>
+
+        <nav class="nav-links" aria-label="Site pages">
+          <a href="index.html" data-i18n="navHome">الرئيسية</a>
+          <a href="about.html" data-i18n="navAbout">عن الفندق</a>
+          <a href="facilities.html" data-i18n="navFacilities">المرافق</a>
+          <a href="packages.html" data-i18n="navPackages">الحزم</a>
+          <a href="services.html" data-i18n="navServices">خدمات إضافية</a>
+          <a href="gallery.html" data-i18n="navGallery">المعرض</a>
+          <a href="faq.html" data-i18n="navFAQ">الأسئلة الشائعة</a>
+          <a href="contact.html" data-i18n="navContact">اتصل بنا</a>
+        </nav>
+
+        <div class="controls" aria-label="Site Settings">
+
+          <button class="btn" type="button" data-action="toggle-theme" aria-pressed="false">
+            🌙 <span data-i18n="darkMode">الوضع الداكن</span>
+          </button>
+
+          <button class="btn" type="button" data-action="toggle-lang" aria-pressed="true">
+            🌐 <span data-i18n="switchToEnglish">الإنجليزية</span>
+          </button>
+
+          <button class="btn" type="button" data-action="toggle-font" aria-pressed="false">
+            Aa <span data-i18n="increaseText">تكبير النص</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container contact-page" tabindex="-1">
+
+    <section class="contact-center">
+      <div class="card contact-card">
+        <div class="card-pad">
+
+          <h1 class="h1 contact-title" data-i18n="contactTitle">اتصل بنا</h1>
+          <p class="lead" data-i18n="contactLead">أرسل طلبك وسنعود إليك بمعلومات الحجز والباقات المتاحة.</p>
+
+          <form id="contactForm" class="form" style="margin-top:12px" aria-label="Contact form">
+
+            <div class="two-col">
+              <div>
+                <label class="small" for="name" data-i18n="formName">الاسم الكامل</label>
+                <input id="name" name="name" required
+                       data-i18n-placeholder="placeholderName"
+                       placeholder="مثال: محمود أسامة" />
+              </div>
+
+              <div>
+                <label class="small" for="email" data-i18n="formEmail">البريد الإلكتروني</label>
+                <input id="email" name="email" type="email" required
+                       data-i18n-placeholder="placeholderEmail"
+                       placeholder="ادخل بريدك الإلكتروني" />
+              </div>
+            </div>
+
+            <div>
+              <label class="small" for="package" data-i18n="formPackage">الباقة المطلوبة</label>
+              <select id="package" name="package">
+                <option value="featured" data-i18n="pkgFeatured">المميزة</option>
+                <option value="classic" data-i18n="pkgClassic">الكلاسيكية</option>
+                <option value="day" data-i18n="pkgDay">اليومية</option>
+                <option value="custom" data-i18n="pkgCustom">مخصصة</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="small" for="message" data-i18n="formMessage">رسالتك</label>
+              <textarea id="message" name="message" required
+                        data-i18n-placeholder="placeholderMsg"
+                        placeholder="اكتب تفاصيل احتياج كلبك..."></textarea>
+            </div>
+
+            <button class="btn primary" type="submit" data-i18n="send">إرسال</button>
+            <div id="formResult" class="small" role="status" aria-live="polite"></div>
+          </form>
+
+          <div class="small" style="margin-top:12px">
+            <div><strong data-i18n="addressLabel">الموقع</strong>: <span data-i18n="addressValue">هونج كونج</span></div>
+            <div style="margin-top:6px"><strong data-i18n="emailLabel">البريد</strong>: <a href="mailto:lovinghomes@gmail.com">lovinghomes@gmail.com</a></div>
+            <div style="margin-top:6px"><strong data-i18n="phoneLabel">الهاتف</strong>: <a href="tel:+85200000000">0771363958</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="gap:12px">
+            <div class="logo"><img src="../Images/logo.png" alt="logo"></div>
+            <div>
+              <strong data-i18n="brandName">لوفينغ هومز</strong>
+              <div class="small" data-i18n="brandLine">فندق الكلاب • هونج كونج</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="small">
+          <div><strong data-i18n="addressLabel">الموقع</strong>: <span data-i18n="addressValue">هونج كونج</span></div>
+          <div style="margin-top:6px"><strong data-i18n="emailLabel">البريد</strong>: <a href="mailto:lovinghomes@gmail.com">lovinghomes@gmail.com</a></div>
+          <div style="margin-top:6px"><strong data-i18n="phoneLabel">الهاتف</strong>: <a href="tel:+85200000000">0771363958</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
